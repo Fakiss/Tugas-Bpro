@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class LoginAneh{
+  public static void main(String[]args){
+    Scanner sc = new Scanner(System.in);
+    
+    //String fName =;
+    //String lName ="";
+    System.out.print("Masukkan First Name = ");
+    String fName = sc.next();
+    System.out.print("Masukkan Last Name = ");
+    String lName =sc.next();
+    
+    String uName =fName.charAt(0) + lName.substring(3);
+    System.out.println("Username = " + uName);
+    
+    String pass =fName.substring(3) + lName.charAt(1);
+     System.out.println("Password = " + pass);
+    //System.out.print("Masukkan temperatur air dalam celcius)= ");
+  }
+}
