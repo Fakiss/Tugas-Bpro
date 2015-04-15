@@ -1,0 +1,19 @@
+import java.util.*;
+
+public class ChekBentukAir{
+  public static void main(String[]args){
+    Scanner sc = new Scanner(System.in);
+    
+    System.out.print("Masukkan temperatur air dalam celcius)= ");
+    int masuk = sc.nextInt();
+    String TempA ="";
+    if (masuk < 0)
+      TempA="PADAT";
+    else if (masuk <100)
+      TempA="CAIR";
+    else
+        TempA="GAS";
+      
+      System.out.println("Air dalam Suhu " + masuk +" derajat celcius berbentuk " + TempA);
+  }
+}
